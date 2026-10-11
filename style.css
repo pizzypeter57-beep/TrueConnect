@@ -1,0 +1,194 @@
+body{
+    min-height: 110vh;
+    min-width: 100vw;
+        background:linear-gradient(to bottom, #7a0050 40%, #1a0014 60%);
+}
+.hero{ position:relative; height:300px; margin:0 auto; width: 290px;}
+
+.heroimg{
+    width: 80px;
+    left: 47%;
+    position: relative;
+}
+
+.arch{
+  position:absolute;
+  border-radius:90px;      
+  /* big radius gives the pill/arch shape */
+  overflow:hidden;         
+  /* crops the photo to that shape */
+}
+.arch img{ width:100%; height:100%; object-fit:cover;
+    margin: auto;
+ }
+
+ a{
+    text-decoration: none;
+    color: white;
+ }
+.a1{ left:30px;  top:20px; width:140px; height:230px; background:#e04fb0; }
+.a2{ left:140px; top:75px; width:150px; height:220px; background:#a21ae6; }
+
+.chip{
+  position:absolute;
+  background:#3a0a32;
+  color:#fff;
+  border-radius:999px;     
+  /* fully rounded label */
+  padding:9px 16px;
+  font-size:14px;
+  box-shadow:0 4px 14px #0005;
+}
+
+.firsttext{
+    text-align: center;
+    align-items: center;
+    color: white;
+    margin-left: 45px;
+}
+.Ptext{
+    text-align: center;
+    color: pink;
+}
+
+.signin-link{
+    text-decoration: none;
+    color: red;
+}
+.signup-link{
+    text-decoration: none;
+    color: white;
+}
+.signs{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    align-items: center;
+    width:100%;
+    padding: 0px 22px;
+    margin-top: 50px;
+}
+
+button{
+    background: #ff03a7;
+    color: white;
+    width: 130px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.choice-whole{
+    background: linear-gradient(to bottom,
+    #1a0014 0%, #1a0014 5%,
+    #7a0050 15%, #7a0050 70%,
+    #1a0014 95%, #1a0014 100%);
+    min-height: 100vh;
+    min-width: 100vw;
+    font-family:Arial, Helvetica, sans-serif
+}
+
+.choice-hero{
+    display: flex;
+    align-items: center;
+    padding: 0px 20px;
+    margin-top: 10px;
+
+}
+.back{
+    background: #eb089b;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+
+}
+   
+.heroimg1{
+    width: 80px;
+    left: 47%;
+    position: relative;
+    margin-left: 75px;
+}
+
+.h2choice{
+    color: white;
+    margin-top: 20px;
+}
+
+.pchoice{
+    color: pink;
+    margin-top: 10px;
+}
+
+.choice-options{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    max-width: 360px;
+    margin: 20px auto;
+}
+
+.badge{
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background: white;
+    color: black;
+    display: grid;
+    place-items: center;
+    font-size: 16px;
+    font-weight: 700px;
+}
+
+.choice-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    height: 106px;
+    width: 120px;
+    border: 1px solid #fa05bd;
+    border-radius: 14px;
+    background: #c7036f;
+    color: white;
+    font-size: 13px;
+    font-weight: 500;
+    text-align: center;   
+    transition: all 0.3s ease-in-out;
+    transform: scale(1);
+    cursor: pointer;
+}
+
+.choice-box:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 0px 10px #fff;
+}
+
+.choice-box i,
+.choice-box .material-icons{
+    font-size: 30px;
+    color: #fff;
+}
+
+.choice-box.selected{
+    background: linear-gradient(#400440, #a0189a);
+    border-color: #fa64dc
+}
+
+.next{
+    display: block;
+    width: 100%;
+    max-width: 360px;
+    margin-left: 42px; ;
+    padding: 15px;
+    border: 0;
+    border-radius: 999px;
+    background: #d91bd4;
+    color: #fff;
+    font-weight: 500;
+    cursor: pointer;
+    text-decoration: none;
+}

@@ -1,0 +1,12 @@
+.firsttext{
+    text-align: center;
+    align-items: center;
+    color: black;
+    margin-left: 45px;
+}
+
+.heroimg{
+    width: 80px;
+    left: 47%;
+    position: relative;
+}
