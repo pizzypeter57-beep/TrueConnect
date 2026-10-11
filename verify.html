@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="verify.css">
+    <link rel="icon" href="logo.png">
+    <title>Verify your Email</title>
+</head>
+<body>
+    <div class="firsttext">
+    <a class="firstlink"href="index.html"><h1>True<span style="font-weight: 100;">Connect</span></h1></a>
+    </div>
+
+    <img class="heroimg" src="logo.png" alt="">
+    <section>
+        <div class="h2verify">
+            <h2>Check your email for a code</h2>
+        </div>
+        <div class="ptext">
+            <p>please enter the verification code sent to your email address <strong id="userEmail"></strong></p>
+        </div>
+        <div class="otp" id="otp">
+  <input type="text" inputmode="numeric" maxlength="1" autocomplete="one-time-code" aria-label="Digit 1">
+  <input type="text" inputmode="numeric" maxlength="1" aria-label="Digit 2">
+  <input type="text" inputmode="numeric" maxlength="1" aria-label="Digit 3">
+  <span class="dash">-</span>
+  <input type="text" inputmode="numeric" maxlength="1" aria-label="Digit 4">
+  <input type="text" inputmode="numeric" maxlength="1" aria-label="Digit 5">
+  <input type="text" inputmode="numeric" maxlength="1" aria-label="Digit 6">
+</div>
+<div class="ptext">
+    <p>Didn't get the code? <span class="fade">Resend Code</span> in 00:22</p>
+    <p>Return back to <a class="signin-link"href="signup.html">Try another email</a></p>
+</div>
+<a href="verified.html"><button class="vbutton">Verify</button></a>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>

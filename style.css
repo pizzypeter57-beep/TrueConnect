@@ -200,7 +200,7 @@ button{
 
 
 /* Media query*/
-@media (min-width: 375px) and (max-width: 430px){
+@media (min-width: 300px) and (max-width: 600px){
     .heroimg1{
         margin-left: 35px;
     }

@@ -1,0 +1,209 @@
+body{
+    height: 100vh;
+    width: 115vw;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.firsttext{
+    text-align: center;
+    align-items: center;
+    color: black;
+}
+
+.firstlink{
+    text-decoration: none;
+    color: black;
+}
+
+.heroimg{
+    width: 80px;
+    left: 47%;
+    position: relative;
+    margin-left: -30px;
+}
+
+input{
+    height: 30px;
+    background: rgb(245, 242, 242);
+    width: 300px;
+    display: grid;
+    gap: 20px;
+    border: 1px solid;
+    border-radius: 12px;
+}
+
+.signupform input:focus{
+  border-color:#d91bd4;
+  box-shadow:0 0 0 3px #d91bd433;
+}
+
+.signupform{
+   margin-left: 20px;
+    width: 100px;
+}
+button{
+    background: #ff03a7;
+    color: white;
+    width: 315px;
+    height: 40px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    margin-left: -1px;
+}
+
+
+.divider{
+  display:flex;
+  align-items:center;      /* keeps "Or" level with the lines */
+  gap:14px;                /* space between lines and text */
+  margin:26px 0 18px;
+  font-size:14px;
+}
+.divider::before,
+.divider::after{
+  content:"";              /* required, or the lines won't show */
+  flex:1;                  /* each line stretches to fill the space */
+  height:1px;
+  background:#ddd;
+}
+
+.social{
+  display:flex;
+  justify-content:center;
+  gap:14px;
+}
+.social button{
+  width:50px;
+  height:50px;
+  border:0;
+  border-radius:50%;
+  background:#d9d9d9;
+  font-size:22px;
+  cursor:pointer;
+}
+.fa-apple{ color:#000; }
+.fa-google{ color:#f44251; }
+
+.signin-link{
+    text-decoration: none;
+    color: red;
+}
+
+.signin{
+    text-align: center;
+    color: rgb(107, 106, 106);
+}
+
+.h2verify{
+    text-align: center;
+}
+
+.ptext{
+    text-align: center;
+}
+
+.otp{
+  display:flex;
+  justify-content:center;
+  gap:10px;
+}
+.otp input{
+  width:46px;
+  height:54px;
+  border:1px solid #666;
+  border-radius:10px;
+  text-align:center;
+  font-size:22px;
+  outline:0;
+  transition:.2s;
+}
+.otp input:focus{
+  border-color:#d91bd4;
+  box-shadow:0 0 0 3px #d91bd433;
+}
+
+.dash{
+    margin-top: 15px;
+}
+.fade{
+    color: gray;
+}
+
+.vbutton{
+    margin-left: 55px;
+}
+
+.vdbutton{
+    margin-left: 55px;
+}
+
+.check{
+  width:240px;
+  height:240px;
+  margin:40px auto;
+  border-radius:50%;
+  background:#d91bd4;
+  display:grid;
+  place-items:center;           /* centers the tick */
+  animation:pop .6s cubic-bezier(.3,1.6,.5,1);
+  margin-bottom: 0px;
+}
+
+.check svg{
+  width:110px;
+  fill:none;
+  stroke:#fff;
+  stroke-width:10;
+  stroke-linecap:square;
+  stroke-dasharray:130;         /* length of the tick path */
+  stroke-dashoffset:130;        /* start hidden */
+  animation:draw .6s .35s forwards;
+}
+
+@keyframes pop{ from{ transform:scale(0); } }
+@keyframes draw{ to{ stroke-dashoffset:0; } }
+
+.illustration{
+    height: 300px;
+    width: 300px;
+    margin-left: 50px;
+    margin-top: 0px;
+}
+
+@media (min-width: 300px) and (max-width: 600px){
+    
+    .firsttext{ 
+        margin-left: 0px;
+    }
+    .heroimg{
+        margin-left: -30px;
+    }
+    .h2verify{
+        margin-left: 0px;
+    }
+    .ptext{
+        margin-left: 0px;
+    }
+    .otp{
+  display:flex;
+  justify-content:center;
+  gap:5px;
+  margin-right: 10px;
+}
+    .otp input{
+  width: 40px;
+  height:50px;
+  border:1px solid #666;
+  border-radius:10px;
+  text-align:center;
+  font-size: 22px;
+  outline:0;
+  transition:.2s;
+}
+.dash{
+    margin-top: 20px;
+}
+
+}
