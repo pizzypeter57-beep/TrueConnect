@@ -48,7 +48,8 @@ body{
 }
 .Ptext{
     text-align: center;
-    color: pink;
+    color: white;
+    margin-left: 50px;
 }
 
 .signin-link{
@@ -109,17 +110,20 @@ button{
     width: 80px;
     left: 47%;
     position: relative;
-    margin-left: 75px;
+    margin-left: 85px;
+    
 }
 
 .h2choice{
     color: white;
     margin-top: 20px;
+    text-align: center;
 }
 
 .pchoice{
     color: pink;
     margin-top: 10px;
+    text-align: center;
 }
 
 .choice-options{
@@ -128,6 +132,7 @@ button{
     gap: 12px;
     max-width: 360px;
     margin: 20px auto;
+    margin-left: 100px;
 }
 
 .badge{
@@ -182,7 +187,7 @@ button{
     display: block;
     width: 100%;
     max-width: 360px;
-    margin-left: 42px; ;
+    margin-left: 70px; ;
     padding: 15px;
     border: 0;
     border-radius: 999px;
@@ -191,4 +196,25 @@ button{
     font-weight: 500;
     cursor: pointer;
     text-decoration: none;
+}
+
+
+/* Media query*/
+@media (min-width: 375px) and (max-width: 430px){
+    .heroimg1{
+        margin-left: 35px;
+    }
+    .h2choice{
+        text-align: center;
+    }
+    .pchoice{
+        text-align: center;
+    }
+    .choice-options{
+        align-items: center;
+        margin-left: 35px;
+    }
+    .next{
+        margin-left: 0px;
+    }
 }
