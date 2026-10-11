@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="signs.css">
     <link rel="icon" href="logo.png">
-    <title>Create Account</title>
+    <title>Sign In</title>
 </head>
 <body>
     <div class="firsttext">
@@ -14,9 +14,22 @@
 
     <img class="heroimg" src="logo.png" alt="">
 
-    <div class="firsttext">
-        <h2>Create Account</h2>
-    </div>
+    
+    <section>
+        <div>
+            <form class="signupform" novalidate>
+                <label for="email">Email</label>
+                <input class="email" name="email" type="email" placeholder="   Enter your email" required><br>
+
+                <label for="password">Password</label>
+                <input id="password" name="password" type="password" 
+                placeholder="Enter password"
+                minlength="8" required><br>
+
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </section>
     <script src="script.js"></script>
 </body>
 </html>

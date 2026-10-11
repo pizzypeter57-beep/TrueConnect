@@ -7,3 +7,14 @@ cards.forEach((card) => {
     });
 });
 
+//Create account//
+document.getElementsByClassName('signupform')[0].addEventListener('submit', e => {
+    e.preventDefault();
+    
+    const form = e.target;
+    if (!form.checkValidity()) {
+        form.reportValidity();
+        return;
+    }
+    window.location.href = 'verify.html';
+});
