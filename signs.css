@@ -139,3 +139,22 @@ button{
 .fade{
     color: gray;
 }
+
+/*Tell us about yourself page*/
+.fa-face-smile{
+  color: yellow;
+  display: inline-grid;
+  place-items: center;
+  border-radius: 50%;
+  background: #3b2a00;
+  vertical-align: middle;
+}
+
+.dob{
+  display: flex;
+  gap: 8px;
+}
+.dob input{
+  width: 100%;
+  text-align: center;
+}
